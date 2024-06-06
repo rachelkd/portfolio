@@ -1,0 +1,38 @@
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: fit-content;
+    align-items: left;
+    gap: 1em;
+}
+
+.social-media-icons button {
+    color: var(--primary-color);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: 0.3s ease-in-out;
+    padding: 0;
+}
+
+.social-media-icons button:hover {
+    color: var(--accent-color-2);
+    cursor: pointer;
+}
+
+@media (min-width: 960px) {
+    .social-media-icons {
+        position: fixed;
+        bottom: 2em;
+        right: 2em;
+        align-items: flex-end;
+        margin-left: 1px;
+    }
+}
+
+@media (max-width: 960px) {
+    .btn-email-2 {
+        display: none; /* Hide the EmailIcon button */
+    }
+}

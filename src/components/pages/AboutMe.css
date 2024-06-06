@@ -6,6 +6,14 @@
     justify-content: top;
 }
 
+.about-me-text {
+    margin: 0;
+}
+
+.text-section {
+    padding: 2rem 0;
+}
+
 .technologies {
     justify-content: space-between;
     line-height: 2;
