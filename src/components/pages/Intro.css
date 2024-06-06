@@ -1,0 +1,17 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    margin-right: 33.3%;
+}
+
+.intro p {
+    padding: 2rem 0;
+}
+
+@media screen and (max-width: 960px) {
+    .intro {
+        margin-right: 0;
+    }
+}

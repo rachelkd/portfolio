@@ -1,0 +1,34 @@
+.about-me {
+    margin-right: 33.3%;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+.technologies {
+    justify-content: space-between;
+    line-height: 2;
+}
+
+.row {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+.technology-column {
+    list-style-type: circle;
+}
+
+@media screen and (max-width: 960px) {
+    .about-me {
+        margin-right: 0;
+    }
+    .technologies {
+        max-width: 80%;
+    }
+}

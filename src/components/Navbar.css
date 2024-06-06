@@ -1,0 +1,39 @@
+.navbar {
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 1000;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: var(--accent-color-2);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    .navbar {
+        display: none;
+    }
+}
