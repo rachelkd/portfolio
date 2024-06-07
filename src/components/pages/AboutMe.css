@@ -1,5 +1,5 @@
 .about-me {
-    margin-right: 33.3%;
+    max-width: 900px;
     padding-bottom: 4rem;
     display: flex;
     flex-direction: column;
@@ -17,6 +17,7 @@
 .technologies {
     justify-content: space-between;
     line-height: 2;
+    padding: 1rem 0;
 }
 
 .row {
@@ -38,5 +39,12 @@
     }
     .technologies {
         max-width: 80%;
+        padding-inline-start: 0;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .technology-item {
+        font-size: 14px;
     }
 }

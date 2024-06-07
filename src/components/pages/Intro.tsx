@@ -1,12 +1,26 @@
-import { FC } from 'react';
+import { FC, useState, useEffect } from 'react';
 import './Intro.css';
 import EmailIcon from '@mui/icons-material/Email';
 import Icons from '../Icons';
 
 const Intro: FC = () => {
+    const [isHovered, setIsHovered] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 960);
+    const email: string = 'rachel05deng@gmail.com';
+
     const handleEmailClick = () => {
         window.location.href = 'mailto:rachel05deng@gmail.com';
     };
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 960);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     return (
         <div className='intro' id='intro'>
@@ -23,12 +37,23 @@ const Intro: FC = () => {
                     visual media.
                 </p>
                 <div className='btn'>
-                    <button className='btn-email' onClick={handleEmailClick}>
-                        <EmailIcon
-                            className='btn-email-icon'
-                            style={{ fontSize: 20 }}
-                        />
-                        Contact me!
+                    <button
+                        className='btn-email'
+                        onClick={handleEmailClick}
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
+                    >
+                        {isHovered && !isMobile ? (
+                            <span className='email-text'>{email}</span>
+                        ) : (
+                            <span className='default-text'>
+                                <EmailIcon
+                                    className='btn-email-icon'
+                                    style={{ fontSize: 20 }}
+                                />
+                                Contact me!
+                            </span>
+                        )}
                     </button>
                 </div>
             </div>
