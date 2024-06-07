@@ -4,8 +4,6 @@ import EmailIcon from '@mui/icons-material/Email';
 import Icons from '../Icons';
 
 const Intro: FC = () => {
-    const email: string = 'rachel05deng@gmail.com';
-
     const handleEmailClick = () => {
         window.location.href = 'mailto:rachel05deng@gmail.com';
     };
