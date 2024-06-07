@@ -7,7 +7,8 @@
     gap: 1em;
 }
 
-.social-media-icons button {
+.social-media-icons button,
+a {
     color: var(--primary-color);
     background-color: transparent;
     outline: none;
@@ -16,7 +17,8 @@
     padding: 0;
 }
 
-.social-media-icons button:hover {
+.social-media-icons button:hover,
+a:hover {
     color: var(--accent-color-2);
     cursor: pointer;
 }
