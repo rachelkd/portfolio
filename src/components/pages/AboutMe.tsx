@@ -52,7 +52,7 @@ const AboutMe: FC = () => {
                 <p className='about-me-text'>
                     Peak Diamond 2 in Valorant. Thinks <em>folklore</em> is
                     Taylor Swift&rsquo;s best album. Misses taking her dog on
-                    hikes with a roll of Gold 200 back home in Vancouver,
+                    hikes with a roll of Kodak Gold 200 back home in Vancouver,
                     British Columbia.
                 </p>
             </div>
