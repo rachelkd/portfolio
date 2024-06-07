@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Link } from 'react-scroll';
-import './Navbar.css';
+import '../styles/Navbar.css';
 
 const Navbar: FC = () => {
     return (

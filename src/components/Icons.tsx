@@ -2,7 +2,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { FC } from 'react';
-import './Icons.css';
+import '../styles/Icons.css';
 
 const Icons: FC = () => {
     const handleEmail = () => {

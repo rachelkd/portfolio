@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import './Intro.css';
+import '../../styles/Intro.css';
 import EmailIcon from '@mui/icons-material/Email';
 import Icons from '../Icons';
 

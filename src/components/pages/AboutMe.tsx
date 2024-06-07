@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import './AboutMe.css';
+import '../../styles/AboutMe.css';
 
 const AboutMe: FC = () => {
     return (
