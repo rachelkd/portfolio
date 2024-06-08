@@ -1,0 +1,21 @@
+.footer-highlight {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.footer-text a {
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: none;
+    color: var(--accent-color-2);
+}
+
+.footer-page {
+    font-size: 12px;
+    text-align: center;
+    width: 50%;
+    color: var(--primary-color);
+    padding: 4rem 0 0 0;
+}

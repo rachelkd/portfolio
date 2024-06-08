@@ -5,6 +5,7 @@
 
 // Components
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 // Pages
 import Intro from './components/pages/Intro';
@@ -18,11 +19,16 @@ import './App.css';
 function App() {
     return (
         <>
-            <Intro />
-            <AboutMe />
-            <Experience />
-            <Projects />
-            <Navbar />
+            <div className='main-content'>
+                <Intro />
+                <AboutMe />
+                <Experience />
+                <Projects />
+                <Navbar />
+            </div>
+            <div className='footer'>
+                <Footer />
+            </div>
         </>
     );
 }
