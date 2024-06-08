@@ -139,10 +139,12 @@ export default function JobsList() {
             </StyledTabs>
             {Object.keys(experienceItems).map((key, i) => (
                 <TabPanel value={value} index={i}>
-                    <span className='joblist-job-title'>
-                        {experienceItems[key]['jobTitle'] + ' '}
-                    </span>
-                    <span className='joblist-job-company'>{key}</span>
+                    <div className='joblist-headline'>
+                        <span className='joblist-job-title'>
+                            {experienceItems[key]['jobTitle'] + ' '}
+                        </span>
+                        <span className='joblist-job-company'>{key}</span>
+                    </div>
                     <div className='joblist-duration'>
                         {experienceItems[key]['duration']}
                     </div>

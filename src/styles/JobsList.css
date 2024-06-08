@@ -1,16 +1,21 @@
-.joblist-job-title {
-    color: var(--accent-color);
-    font-weight: 700;
-}
-
+.joblist-job-title,
 .joblist-job-company {
     color: var(--accent-color);
     font-weight: 700;
+    line-height: 1.5;
 }
 
 .joblist-duration {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
-    padding: 0.3rem 0;
+    padding: 0.5rem 0 0 0;
+}
+
+.job-description {
+    list-style-type: circle;
+}
+
+.job-description li {
+    line-height: 1.5;
 }
