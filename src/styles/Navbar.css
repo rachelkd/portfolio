@@ -1,5 +1,5 @@
 .navbar {
-    width: 100%;
+    width: fit-content;
     height: fit-content;
     flex-direction: column;
     display: flex;
@@ -22,7 +22,8 @@
     margin: 0;
 }
 
-a {
+.nav-menu a {
+    color: var(--disabled-color);
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
