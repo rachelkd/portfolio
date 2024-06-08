@@ -35,7 +35,7 @@ const Navbar: FC = () => {
                                 to='experience'
                                 spy={true}
                                 smooth={true}
-                                offset={0}
+                                offset={-20}
                                 duration={500}
                             >
                                 /experience
@@ -46,7 +46,7 @@ const Navbar: FC = () => {
                                 to='projects'
                                 spy={true}
                                 smooth={true}
-                                offset={0}
+                                offset={-20}
                                 duration={500}
                             >
                                 /projects
