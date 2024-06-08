@@ -111,6 +111,7 @@ const StyledTab = styled((props: StyledTabProps) => (
     marginRight: theme.spacing(1),
     maxWidth: 300,
     color: theme.palette.text.disabled,
+    transition: 'color 0.3s ease-in-out',
     '&.Mui-selected': {
         color: theme.palette.primary.contrastText,
     },
