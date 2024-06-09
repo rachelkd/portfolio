@@ -6,7 +6,7 @@
     gap: 1rem;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1200px) {
     .cards-container {
         grid-template-columns: repeat(2, 1fr);
     }
