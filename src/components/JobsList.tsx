@@ -159,7 +159,6 @@ export default function JobsList() {
                     </ul>
                 </TabPanel>
             ))}
-            <Box sx={{ p: 3 }} />
         </Box>
     );
 }

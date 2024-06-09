@@ -26,6 +26,10 @@ export const themeOptions: ThemeOptions = {
     typography: {
         fontFamily: '"Roboto Mono", sans-serif',
         fontSize: 14,
+        h5: {
+            fontSize: 18,
+            fontWeight: 700
+        }
     },
 };
 
