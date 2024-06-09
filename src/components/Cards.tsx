@@ -23,6 +23,11 @@ const projectItems: { [key: string]: ProjectItems } = {
         desc: 'An application that assists with communication for people with speech disorders',
         technologiesUsed: ['Svelte'],
     },
+    Pomo: {
+        githubLink: 'https://github.com/rachelkd/pomo',
+        desc: 'A minimalistic pomodoro timer with adjustable work and break settings',
+        technologiesUsed: ['Svelte'],
+    },
     Bookmarklet: {
         githubLink: 'https://github.com/rachelkd/bookmarklet',
         desc: 'An application that creates browser bookmarks that copy user-specified text to their device’s clipboard',
