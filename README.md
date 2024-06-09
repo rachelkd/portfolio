@@ -1,30 +1,13 @@
-# React + TypeScript + Vite
+# Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Built, designed, and maintained by Rachel Deng.
 
-Currently, two official plugins are available:
+## Colours
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+| Color       | Hex                                                                |
+| ----------- | ------------------------------------------------------------------ |
+| Gunmetal    | ![#253237](https://via.placeholder.com/10/253237?text=+) `#253237` |
+| Light slate | ![#9db4c0](https://via.placeholder.com/10/9db4c0?text=+) `#9db4c0` |
+| Baby blue   | ![#e0fbfc](https://via.placeholder.com/10/e0fbfc?text=+) `#e0fbfc` |
+| Salmon pink | ![#ff7a91](https://via.placeholder.com/10/ff7a91?text=+) `#ff7a91` |
+| Slate       | ![#5c6b73](https://via.placeholder.com/10/5c6b73?text=+) `#5c6b73` |
