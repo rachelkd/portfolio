@@ -32,11 +32,11 @@ const AboutMe: FC = () => {
                     <ul className='row'>
                         <ul className='technology-column'>
                             <li className='technology-item'>Python</li>
-                            <li className='technology-item'>Java</li>
                             <li className='technology-item'>React TS</li>
+                            <li className='technology-item'>JavaScript ES6+</li>
                         </ul>
                         <ul className='technology-column'>
-                            <li className='technology-item'>JavaScript ES6+</li>
+                            <li className='technology-item'>Java</li>
                             <li className='technology-item'>Svelte</li>
                             <li className='technology-item'>SQLite</li>
                         </ul>
