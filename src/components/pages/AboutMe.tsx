@@ -11,8 +11,8 @@ const AboutMe: FC = () => {
                     Hi, my name is{' '}
                     <span className='bold highlight-2'>Rachel Deng</span>. I am
                     pursuing my Honours Bachelor of Science in{' '}
-                    <span className='bold'>computer science</span> and a minor
-                    in{' '}
+                    <span className='bold'>computer science</span> with a{' '}
+                    <span className='bold'>Focus in AI</span>, and a minor in{' '}
                     <span className='bold'>
                         history and philosophy of science
                     </span>{' '}
@@ -32,11 +32,11 @@ const AboutMe: FC = () => {
                     <ul className='row'>
                         <ul className='technology-column'>
                             <li className='technology-item'>Python</li>
-                            <li className='technology-item'>React.js</li>
-                            <li className='technology-item'>JavaScript ES6+</li>
+                            <li className='technology-item'>Java</li>
+                            <li className='technology-item'>React TS</li>
                         </ul>
                         <ul className='technology-column'>
-                            <li className='technology-item'>Java</li>
+                            <li className='technology-item'>JavaScript ES6+</li>
                             <li className='technology-item'>Svelte</li>
                             <li className='technology-item'>SQLite</li>
                         </ul>
