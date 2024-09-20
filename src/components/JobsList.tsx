@@ -13,12 +13,21 @@ interface ExperienceItem {
 }
 
 const experienceItems: { [key: string]: ExperienceItem } = {
+    'University of Toronto Engineering Student Consulting Association': {
+        jobTitle: 'UI/UX Designer and Front-End Dev @',
+        duration: 'Aug. 2024 - Present',
+        desc: [
+            'Developed UI mockups and designed graphic user interface elements in Figma',
+            'Implemented UI/UX designs in React and TypeScript with a web development team',
+        ],
+    },
     'UBC Geering Up Engineering Outreach': {
         jobTitle: 'Camps Instructor @',
-        duration: 'Jun. 2024 - Present',
+        duration: 'Jun. 2024 - Aug. 2024',
         desc: [
-            'Created, coordinated, and instructed engaging STEM lesson plans for elementary-aged children',
-            'Taught Python and JavaScript to 11-13 year old girls',
+            'Programmed interactive coding curriculum aimed at elementary and middle school students',
+            'Instructed and facilitated dynamic lessons, with an emphasis on coding and physics camps',
+            'Fostered effective collaboration and communication among co-instructors and campers',
         ],
     },
     'Crofton House School': {
