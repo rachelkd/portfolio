@@ -9,12 +9,12 @@ interface ProjectItems {
 
 const projectItems: { [key: string]: ProjectItems } = {
     Spotiscover: {
-        githubLink: 'https://github.com/rachelkd/project2',
+        githubLink: 'https://github.com/rachelkd/spotiscover',
         desc: 'A web application that recommends songs to users based on their liked songs',
         technologiesUsed: ['Python', 'Flask'],
     },
     'Escaping UofT': {
-        githubLink: 'https://github.com/rachelkd/project1',
+        githubLink: 'https://github.com/rachelkd/escaping-uoft',
         desc: 'A text adventure game played in the command line interface',
         technologiesUsed: ['Python'],
     },
