@@ -16,7 +16,6 @@ const Intro: FC = () => {
                     i'm <span className='highlight'>rachel</span>
                     <span className='cursor-blink'>!</span>
                 </h1>
-                <p>Rachel ♡ Alyssa lots</p>
                 <p>
                     I am a computer science student at the University of
                     Toronto. I love everything technology &mdash; whether
