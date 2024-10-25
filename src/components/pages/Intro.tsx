@@ -2,7 +2,7 @@ import { FC } from 'react';
 import '../../styles/Intro.css';
 import EmailIcon from '@mui/icons-material/Email';
 import Icons from '../Icons';
-
+import { TypingAnimation } from '../ui/typing-animation';
 const Intro: FC = () => {
     const handleEmailClick = () => {
         window.location.href = 'mailto:rachel05deng@gmail.com';
@@ -11,11 +11,11 @@ const Intro: FC = () => {
     return (
         <div className='intro' id='intro'>
             <div className='text-and-btn'>
-                <h1>nice to meet you,</h1>
-                <h1>
-                    i'm <span className='highlight'>rachel</span>
-                    <span className='cursor-blink'>!</span>
-                </h1>
+                <TypingAnimation
+                    className='h1'
+                    duration={85}
+                    text={"nice to meet you,\ni'm rachel!"}
+                />
                 <p>
                     I am a computer science student at the University of
                     Toronto. I love everything technology &mdash; whether
