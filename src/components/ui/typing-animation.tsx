@@ -31,7 +31,7 @@ export function TypingAnimation({
         return () => {
             clearInterval(typingEffect);
         };
-    }, [duration, i]);
+    }, [duration, text, i]);
 
     return (
         <div className='flex flex-row items-center'>
