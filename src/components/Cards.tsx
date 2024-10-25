@@ -28,7 +28,7 @@ const projectItems: { [key: string]: ProjectItems } = {
     'Escaping UofT': {
         githubLink: 'https://github.com/rachelkd/escaping-uoft',
         desc: 'A text adventure game played in the command line interface',
-        technologiesUsed: ['Python'],
+        technologiesUsed: ['Python', 'Pytest'],
     },
     Loqui: {
         githubLink: 'https://github.com/DanielTong50/loqui',
