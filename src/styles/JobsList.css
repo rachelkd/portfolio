@@ -18,4 +18,10 @@
 
 .job-description li {
     line-height: 1.5;
+    margin-bottom: 1rem; /* Adjust this value to control the spacing */
+}
+
+/* Remove margin from last item to avoid extra space at bottom */
+.job-description li:last-child {
+    margin-bottom: 0;
 }

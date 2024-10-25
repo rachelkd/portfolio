@@ -16,7 +16,7 @@ const AboutMe: FC = () => {
                     <span className='bold'>
                         history and philosophy of science
                     </span>{' '}
-                    at the{' '}
+                    and <span className='bold'>statistics</span> at the{' '}
                     <span className='bold highlight-2'>
                         University of Toronto
                     </span>
