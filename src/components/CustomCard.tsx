@@ -16,7 +16,7 @@ type Props = {
 const CustomCard = (props: Props) => {
     return (
         <div className='card'>
-            <Box sx={{ width: 275 }}>
+            <Box>
                 <Card
                     variant='elevation'
                     sx={{

@@ -8,6 +8,18 @@ interface ProjectItems {
 }
 
 const projectItems: { [key: string]: ProjectItems } = {
+    Pawmodoro: {
+        githubLink: 'https://github.com/rachelkd/pawmodoro',
+        desc: 'A cat-themed focus application with Spotify integration, customizable timers and user statistics tracking.',
+        technologiesUsed: [
+            'Java',
+            'Java Swing',
+            'JUnit',
+            'Next.js',
+            'Spring Boot',
+            'SQL',
+        ],
+    },
     Spotiscover: {
         githubLink: 'https://github.com/rachelkd/spotiscover',
         desc: 'A web application that recommends songs to users based on their liked songs',
@@ -39,9 +51,8 @@ const Cards = () => {
     return (
         <div className='cards-container'>
             {Object.keys(projectItems).map((key) => (
-                <div className='card'>
+                <div className='card' key={key}>
                     <CustomCard
-                        key={key}
                         projectTitle={key}
                         githubLink={projectItems[key].githubLink}
                         desc={projectItems[key].desc}
