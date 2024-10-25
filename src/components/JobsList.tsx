@@ -17,25 +17,27 @@ const experienceItems: { [key: string]: ExperienceItem } = {
         jobTitle: 'UI/UX Designer and Front-End Dev @',
         duration: 'Aug. 2024 - Present',
         desc: [
-            'Developed UI mockups and designed graphic user interface elements in Figma',
-            'Implemented UI/UX designs in React and TypeScript with a web development team',
+            'Design 6 responsive web designs in Figma, improving cross-device compatibility and user experience',
+            "Build and style 2 web pages and a component library with Next.js, React, TypeScript, and Shadcn, appealing to potential clients for the organization's consulting engineering projects",
+            "Collaborate with web and executive teams to ensure clarity and intuition in the design while adhering to project deadlines and the team's vision",
+            'Plan a CRUD-based approach for managing form submissions on the website, connecting with new clients and members',
         ],
     },
     'UBC Geering Up Engineering Outreach': {
-        jobTitle: 'Camps Instructor @',
+        jobTitle: 'Elementary Camps Instructor @',
         duration: 'Jun. 2024 - Aug. 2024',
         desc: [
-            'Programmed interactive coding curriculum aimed at elementary and middle school students',
-            'Instructed and facilitated dynamic lessons, with an emphasis on coding and physics camps',
-            'Fostered effective collaboration and communication among co-instructors and campers',
+            'Programmed interactive coding curriculum in Python aimed at elementary and middle school students to facilitate STEM outreach in British Columbia',
+            'Instructed over 30 dynamic STEM lessons with an emphasis on coding and physics, instilling confidence in STEM for underrepresented groups',
+            'Fostered effective collaboration and communication among co-instructors and campers to teach over 300 students per week',
         ],
     },
     'Crofton House School': {
         jobTitle: 'Graduation Committee Captain @',
         duration: 'Sept. 2022 - Jun. 2023',
         desc: [
-            'Created a Google Apps script to facilitate the printing of labels based on Google Form responses',
-            'Fundraised over $1730 and conducted a formal wear drive for the Cinderella Project organization',
+            'Created a Google Apps script to facilitate the printing of 700 labels based on Google Form responses',
+            'Fundraised over $1,730 and conducted a formal wear drive for the Cinderella Project organization',
         ],
     },
 };
