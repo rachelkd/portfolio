@@ -22,10 +22,19 @@ const CustomCard = (props: Props) => {
                     sx={{
                         backgroundColor: 'rgba(0, 0, 0, 0.1)',
                         boxShadow: 'none',
+                        height: '100%', // Ensure card takes full height
+                        display: 'flex',
+                        flexDirection: 'column',
                     }}
                 >
-                    <Fragment>
-                        <CardContent>
+                    <CardContent
+                        sx={{
+                            height: '100%',
+                            display: 'flex',
+                            flexDirection: 'column',
+                        }}
+                    >
+                        <div className='card-header'>
                             <Box
                                 sx={{
                                     display: 'flex',
@@ -41,17 +50,20 @@ const CustomCard = (props: Props) => {
                                     href={props.githubLink}
                                     target='_blank'
                                 >
-                                    <GitHubIcon
-                                        color='secondary'
-                                        className='transition-colors duration-300'
-                                    />
+                                    <GitHubIcon color='secondary' />
                                 </a>
                             </Box>
+                        </div>
+
+                        <div className='card-body' style={{ flex: 1 }}>
                             <Typography
                                 sx={{ fontSize: 14, padding: '1em 0 0 0' }}
                             >
                                 {props.desc}
                             </Typography>
+                        </div>
+
+                        <div className='card-footer'>
                             <Typography
                                 sx={{
                                     fontSize: 12,
@@ -61,8 +73,8 @@ const CustomCard = (props: Props) => {
                             >
                                 {props.technologiesUsed.join(', ')}
                             </Typography>
-                        </CardContent>
-                    </Fragment>
+                        </div>
+                    </CardContent>
                 </Card>
             </Box>
         </div>
