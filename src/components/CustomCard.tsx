@@ -41,7 +41,10 @@ const CustomCard = (props: Props) => {
                                     href={props.githubLink}
                                     target='_blank'
                                 >
-                                    <GitHubIcon color='secondary' />
+                                    <GitHubIcon
+                                        color='secondary'
+                                        className='transition-colors duration-300'
+                                    />
                                 </a>
                             </Box>
                             <Typography
