@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import Cards from '../Cards';
-import '../../styles/Projects.css';
 
 const Projects: FC = () => {
     return (

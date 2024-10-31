@@ -21,7 +21,7 @@ function App() {
                 <Projects />
                 <Navbar />
             </div>
-            <div className='flex justify-center items-center w-full'>
+            <div className='flex justify-center items-center w-full pb-8'>
                 <Footer />
             </div>
         </>

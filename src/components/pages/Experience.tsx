@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import JobsList from '../JobsList';
-import '../../styles/Experience.css';
 
 const Experience: FC = () => {
     return (
