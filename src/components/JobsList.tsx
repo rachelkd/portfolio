@@ -61,7 +61,7 @@ function TabPanel(props: TabPanelProps) {
         >
             {value === index && (
                 <Box sx={{ p: 3 }}>
-                    <Typography>{children}</Typography>
+                    <Typography component='div'>{children}</Typography>
                 </Box>
             )}
         </div>
@@ -145,11 +145,11 @@ export default function JobsList() {
                 aria-label='jobs list'
             >
                 {Object.keys(experienceItems).map((key, i) => (
-                    <StyledTab label={key} {...a11yProps(i)} />
+                    <StyledTab key={i} label={key} {...a11yProps(i)} />
                 ))}
             </StyledTabs>
             {Object.keys(experienceItems).map((key, i) => (
-                <TabPanel value={value} index={i}>
+                <TabPanel key={i} value={value} index={i}>
                     <div className='space-y-4'>
                         <div className='space-y-4'>
                             <div className='flex flex-wrap'>
