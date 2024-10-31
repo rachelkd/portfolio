@@ -1,5 +1,4 @@
 import CustomCard from './CustomCard';
-import '../styles/Cards.css';
 
 interface ProjectItems {
     githubLink: string;
@@ -49,9 +48,9 @@ const projectItems: { [key: string]: ProjectItems } = {
 
 const Cards = () => {
     return (
-        <div className='cards-container'>
+        <div className='grid grid-cols-1 gap-8 w-full md:grid-cols-2 md:gap-4 lg:grid-cols-3'>
             {Object.keys(projectItems).map((key) => (
-                <div className='card' key={key}>
+                <div className='w-full h-full' key={key}>
                     <CustomCard
                         projectTitle={key}
                         githubLink={projectItems[key].githubLink}

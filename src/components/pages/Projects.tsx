@@ -3,7 +3,7 @@ import Cards from '../Cards';
 
 const Projects: FC = () => {
     return (
-        <div className='projects-page' id='projects'>
+        <div className='flex flex-col gap-6' id='projects'>
             <h1>/projects</h1>
             <Cards />
         </div>

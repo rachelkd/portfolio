@@ -3,7 +3,6 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import '../styles/CustomCard.css';
 
 type Props = {
     projectTitle: string;
@@ -14,14 +13,14 @@ type Props = {
 
 const CustomCard = (props: Props) => {
     return (
-        <div className='card'>
-            <Box>
+        <div className='w-full h-full flex'>
+            <Box className='w-full'>
                 <Card
                     variant='elevation'
                     sx={{
                         backgroundColor: 'rgba(0, 0, 0, 0.1)',
                         boxShadow: 'none',
-                        height: '100%', // Ensure card takes full height
+                        height: '100%',
                         display: 'flex',
                         flexDirection: 'column',
                     }}
@@ -33,7 +32,7 @@ const CustomCard = (props: Props) => {
                             flexDirection: 'column',
                         }}
                     >
-                        <div className='card-header'>
+                        <div className='w-full'>
                             <Box
                                 sx={{
                                     display: 'flex',
@@ -45,7 +44,7 @@ const CustomCard = (props: Props) => {
                                     {props.projectTitle}
                                 </Typography>
                                 <a
-                                    className='projects-github-icon'
+                                    className='text-accent hover:text-accent-2 transition-colors duration-300'
                                     href={props.githubLink}
                                     target='_blank'
                                 >
@@ -54,7 +53,7 @@ const CustomCard = (props: Props) => {
                             </Box>
                         </div>
 
-                        <div className='card-body' style={{ flex: 1 }}>
+                        <div className='flex-1'>
                             <Typography
                                 sx={{ fontSize: 14, padding: '1em 0 0 0' }}
                             >
@@ -62,7 +61,7 @@ const CustomCard = (props: Props) => {
                             </Typography>
                         </div>
 
-                        <div className='card-footer'>
+                        <div>
                             <Typography
                                 sx={{
                                     fontSize: 12,
