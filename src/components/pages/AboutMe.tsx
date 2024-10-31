@@ -2,10 +2,7 @@ import { FC } from 'react';
 
 const AboutMe: FC = () => {
     return (
-        <div
-            className='about-me max-w-screen-lg flex flex-col gap-6'
-            id='about-me'
-        >
+        <div className='about-me pb-8 flex flex-col gap-6' id='about-me'>
             <h1>/about-me</h1>
             <div className='text-section'>
                 <p>

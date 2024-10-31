@@ -8,9 +8,6 @@ import AboutMe from './components/pages/AboutMe';
 import Experience from './components/pages/Experience';
 import Projects from './components/pages/Projects';
 
-// CSS
-// import './App.css';
-
 function App() {
     return (
         <>
