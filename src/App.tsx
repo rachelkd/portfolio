@@ -19,7 +19,7 @@ import './App.css';
 function App() {
     return (
         <>
-            <div className='main-content'>
+            <div className='w-full p-2 sm:p-4 md:p-6 lg:p-8'>
                 <Intro />
                 <AboutMe />
                 <Experience />

@@ -11,7 +11,7 @@ const Intro: FC = () => {
 
     return (
         <div
-            className='min-h-screen flex flex-col justify-center items-left w-full p-8'
+            className='min-h-screen flex flex-col justify-center items-left w-full'
             id='intro'
         >
             <div className='flex flex-col space-y-6 w-full'>
