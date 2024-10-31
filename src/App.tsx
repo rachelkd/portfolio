@@ -11,7 +11,7 @@ import Projects from './components/pages/Projects';
 function App() {
     return (
         <>
-            <div className='w-full px-8 md:px-40'>
+            <div className='w-full px-8 md:px-20 lg:px-40'>
                 <Intro />
                 <AboutMe />
                 <Experience />
