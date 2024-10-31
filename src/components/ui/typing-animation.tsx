@@ -54,7 +54,7 @@ export function TypingAnimation({
                 )}
             >
                 {formattedText}
-                <span className='typing-cursor'>|</span>
+                <span className='animate-blink'>|</span>
             </h1>
         </div>
     );
