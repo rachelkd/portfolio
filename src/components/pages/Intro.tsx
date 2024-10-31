@@ -1,5 +1,4 @@
 import { FC } from 'react';
-// import '../../styles/Intro.css';
 import EmailIcon from '@mui/icons-material/Email';
 import Icons from '../Icons';
 import { TypingAnimation } from '../ui/typing-animation';
