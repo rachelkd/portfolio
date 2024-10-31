@@ -80,10 +80,10 @@ const StyledTabs = styled((props: StyledTabsProps) => {
     const theme = useTheme();
     return (
         <Tabs
+            {...props}
             orientation='vertical'
             variant='scrollable'
             scrollButtons='auto'
-            {...props}
             TabIndicatorProps={{
                 children: <span className='MuiTabs-indicatorSpan' />,
             }}
@@ -93,10 +93,14 @@ const StyledTabs = styled((props: StyledTabsProps) => {
                     display: 'flex',
                     justifyContent: 'center',
                     backgroundColor: 'transparent',
+                    height: '100%',
+                    right: 0,
+                    left: 'auto',
                 },
                 '& .MuiTabs-indicatorSpan': {
                     maxWidth: 4,
                     width: '100%',
+                    height: '100%',
                     backgroundColor: theme.palette.primary.contrastText,
                 },
             }}
@@ -136,7 +140,7 @@ export default function JobsList() {
     };
 
     return (
-        <div className='flex bg-transparent'>
+        <div className='flex flex-col md:flex-row bg-transparent'>
             <StyledTabs
                 value={value}
                 onChange={handleChange}
