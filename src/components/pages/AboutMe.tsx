@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { Star } from 'lucide-react';
 
 const AboutMe: FC = () => {
     return (
@@ -27,31 +28,39 @@ const AboutMe: FC = () => {
                 </p>
                 <div>
                     <ul className='grid grid-cols-1 md:grid-cols-3 gap-4 w-full'>
-                        <li className='flex items-center gap-4 before:content-["☆"]'>
+                        <li className='flex items-center gap-4'>
+                            <Star size={16} />
                             Java
                         </li>
-                        <li className='flex items-center gap-4 before:content-["☆"]'>
+                        <li className='flex items-center gap-4'>
+                            <Star size={16} />
                             Python
                         </li>
-                        <li className='flex items-center gap-4 before:content-["☆"]'>
-                            C
+                        <li className='flex items-center gap-4'>
+                            <Star size={16} />C
                         </li>
-                        <li className='flex items-center gap-4 before:content-["☆"]'>
+                        <li className='flex items-center gap-4'>
+                            <Star size={16} />
                             Next.js
                         </li>
-                        <li className='flex items-center gap-4 before:content-["☆"]'>
+                        <li className='flex items-center gap-4'>
+                            <Star size={16} />
                             PostgreSQL
                         </li>
-                        <li className='flex items-center gap-4 before:content-["☆"]'>
+                        <li className='flex items-center gap-4'>
+                            <Star size={16} />
                             Spring Boot
                         </li>
-                        <li className='flex items-center gap-4 before:content-["☆"]'>
+                        <li className='flex items-center gap-4'>
+                            <Star size={16} />
                             JavaScript ES6+
                         </li>
-                        <li className='flex items-center gap-4 before:content-["☆"]'>
+                        <li className='flex items-center gap-4'>
+                            <Star size={16} />
                             Svelte
                         </li>
-                        <li className='flex items-center gap-4 before:content-["☆"]'>
+                        <li className='flex items-center gap-4'>
+                            <Star size={16} />
                             Ruby
                         </li>
                     </ul>
