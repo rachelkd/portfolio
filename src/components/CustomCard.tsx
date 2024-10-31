@@ -44,11 +44,26 @@ const CustomCard = (props: Props) => {
                                     {props.projectTitle}
                                 </Typography>
                                 <a
-                                    className='text-accent hover:text-accent-2 transition-colors duration-300'
+                                    className='
+                                        text-accent 
+                                        hover:text-accent-2 
+                                        transition-all 
+                                        duration-300
+                                        ease-in-out
+                                    '
                                     href={props.githubLink}
                                     target='_blank'
                                 >
-                                    <GitHubIcon color='secondary' />
+                                    <GitHubIcon
+                                        className='
+                                            fill-primary 
+                                            hover:fill-secondary 
+                                            transition-all 
+                                            duration-300
+                                            ease-in-out
+                                        '
+                                        sx={{ fontSize: 24 }}
+                                    />
                                 </a>
                             </Box>
                         </div>
