@@ -4,7 +4,6 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { styled, useTheme } from '@mui/material/styles';
-import '../styles/JobsList.css';
 
 interface ExperienceItem {
     jobTitle: string;
@@ -151,23 +150,30 @@ export default function JobsList() {
             </StyledTabs>
             {Object.keys(experienceItems).map((key, i) => (
                 <TabPanel value={value} index={i}>
-                    <div className='joblist-headline'>
-                        <span className='joblist-job-title'>
-                            {experienceItems[key]['jobTitle'] + ' '}
-                        </span>
-                        <span className='joblist-job-company'>{key}</span>
+                    <div className='space-y-4'>
+                        <div className='space-y-4'>
+                            <div className='flex flex-wrap'>
+                                <span className='font-bold text-accent'>
+                                    {experienceItems[key]['jobTitle']}&nbsp;
+                                </span>
+                                <span className='font-bold text-accent'>
+                                    {key}
+                                </span>
+                            </div>
+                            <div className='text-sm font-bold uppercase'>
+                                {experienceItems[key]['duration']}
+                            </div>
+                        </div>
+
+                        <ul className='list-disc ml-4 space-y-2'>
+                            {experienceItems[key]['desc'].map(function (
+                                descItem,
+                                i
+                            ) {
+                                return <li key={i}>{descItem}</li>;
+                            })}
+                        </ul>
                     </div>
-                    <div className='joblist-duration'>
-                        {experienceItems[key]['duration']}
-                    </div>
-                    <ul className='job-description'>
-                        {experienceItems[key]['desc'].map(function (
-                            descItem,
-                            i
-                        ) {
-                            return <li key={i}>{descItem}</li>;
-                        })}
-                    </ul>
                 </TabPanel>
             ))}
         </Box>
