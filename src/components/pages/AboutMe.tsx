@@ -26,40 +26,34 @@ const AboutMe: FC = () => {
                     Recently, I have been working with:
                 </p>
                 <div>
-                    <ul className='grid grid-cols-1 md:grid-cols-3 justify-between w-full'>
-                        <ul className='list-none space-y-4'>
-                            <li className='flex items-center gap-4 before:content-["☆"]'>
-                                Java
-                            </li>
-                            <li className='flex items-center gap-4 before:content-["☆"]'>
-                                Python
-                            </li>
-                            <li className='flex items-center gap-4 before:content-["☆"]'>
-                                C
-                            </li>
-                        </ul>
-                        <ul className='list-none space-y-4'>
-                            <li className='flex items-center gap-4 before:content-["☆"]'>
-                                Next.js
-                            </li>
-                            <li className='flex items-center gap-4 before:content-["☆"]'>
-                                PostgreSQL
-                            </li>
-                            <li className='flex items-center gap-4 before:content-["☆"]'>
-                                Spring Boot
-                            </li>
-                        </ul>
-                        <ul className='list-none space-y-4'>
-                            <li className='flex items-center gap-4 before:content-["☆"]'>
-                                JavaScript ES6+
-                            </li>
-                            <li className='flex items-center gap-4 before:content-["☆"]'>
-                                Svelte
-                            </li>
-                            <li className='flex items-center gap-4 before:content-["☆"]'>
-                                Ruby
-                            </li>
-                        </ul>
+                    <ul className='grid grid-cols-1 md:grid-cols-3 gap-4 w-full'>
+                        <li className='flex items-center gap-4 before:content-["☆"]'>
+                            Java
+                        </li>
+                        <li className='flex items-center gap-4 before:content-["☆"]'>
+                            Python
+                        </li>
+                        <li className='flex items-center gap-4 before:content-["☆"]'>
+                            C
+                        </li>
+                        <li className='flex items-center gap-4 before:content-["☆"]'>
+                            Next.js
+                        </li>
+                        <li className='flex items-center gap-4 before:content-["☆"]'>
+                            PostgreSQL
+                        </li>
+                        <li className='flex items-center gap-4 before:content-["☆"]'>
+                            Spring Boot
+                        </li>
+                        <li className='flex items-center gap-4 before:content-["☆"]'>
+                            JavaScript ES6+
+                        </li>
+                        <li className='flex items-center gap-4 before:content-["☆"]'>
+                            Svelte
+                        </li>
+                        <li className='flex items-center gap-4 before:content-["☆"]'>
+                            Ruby
+                        </li>
                     </ul>
                 </div>
             </div>
