@@ -57,13 +57,10 @@ function TabPanel(props: TabPanelProps) {
             hidden={value !== index}
             id={`full-width-tabpanel-${index}`}
             aria-labelledby={`full-width-tab-${index}`}
+            className='w-full'
             {...other}
         >
-            {value === index && (
-                <Box sx={{ p: 3 }}>
-                    <Typography component='div'>{children}</Typography>
-                </Box>
-            )}
+            {value === index && <div className='w-full p-8'>{children}</div>}
         </div>
     );
 }
@@ -85,13 +82,14 @@ const StyledTabs = styled((props: StyledTabsProps) => {
     const theme = useTheme();
     return (
         <Tabs
-            orientation='horizontal'
+            orientation='vertical'
             variant='scrollable'
             scrollButtons='auto'
             {...props}
             TabIndicatorProps={{
                 children: <span className='MuiTabs-indicatorSpan' />,
             }}
+            className='border-r border-[#FF7A91]'
             sx={{
                 '& .MuiTabs-indicator': {
                     display: 'flex',
@@ -99,7 +97,7 @@ const StyledTabs = styled((props: StyledTabsProps) => {
                     backgroundColor: 'transparent',
                 },
                 '& .MuiTabs-indicatorSpan': {
-                    maxWidth: 80,
+                    maxWidth: 4,
                     width: '100%',
                     backgroundColor: theme.palette.primary.contrastText,
                 },
@@ -118,8 +116,10 @@ const StyledTab = styled((props: StyledTabProps) => (
     textTransform: 'uppercase',
     fontWeight: theme.typography.fontWeightRegular,
     fontSize: theme.typography.pxToRem(15),
-    marginRight: theme.spacing(1),
-    maxWidth: 300,
+    minWidth: '200px',
+    textAlign: 'left',
+    alignItems: 'flex-start',
+    marginBottom: theme.spacing(1),
     color: theme.palette.text.disabled,
     transition: 'color 0.3s ease-in-out',
     '&.Mui-selected': {
@@ -138,7 +138,7 @@ export default function JobsList() {
     };
 
     return (
-        <Box sx={{ bgcolor: 'transparent' }}>
+        <div className='flex bg-transparent'>
             <StyledTabs
                 value={value}
                 onChange={handleChange}
@@ -148,34 +148,37 @@ export default function JobsList() {
                     <StyledTab key={i} label={key} {...a11yProps(i)} />
                 ))}
             </StyledTabs>
-            {Object.keys(experienceItems).map((key, i) => (
-                <TabPanel key={i} value={value} index={i}>
-                    <div className='space-y-4'>
-                        <div className='space-y-4'>
-                            <div className='flex flex-wrap'>
-                                <span className='font-bold text-accent'>
-                                    {experienceItems[key]['jobTitle']}&nbsp;
-                                </span>
-                                <span className='font-bold text-accent'>
-                                    {key}
-                                </span>
+            <div className='flex-1'>
+                {Object.keys(experienceItems).map((key, i) => (
+                    <TabPanel key={i} value={value} index={i}>
+                        <div className='w-full space-y-4'>
+                            <div className='w-full space-y-4'>
+                                <div className='w-full flex flex-wrap'>
+                                    <span className='font-bold text-accent'>
+                                        {experienceItems[key]['jobTitle']}&nbsp;
+                                    </span>
+                                    <span className='font-bold text-accent'>
+                                        {key}
+                                    </span>
+                                </div>
+                                <div className='w-full text-sm font-bold uppercase'>
+                                    {experienceItems[key]['duration']}
+                                </div>
                             </div>
-                            <div className='text-sm font-bold uppercase'>
-                                {experienceItems[key]['duration']}
-                            </div>
-                        </div>
 
-                        <ul className='list-disc ml-4 space-y-2'>
-                            {experienceItems[key]['desc'].map(function (
-                                descItem,
-                                i
-                            ) {
-                                return <li key={i}>{descItem}</li>;
-                            })}
-                        </ul>
-                    </div>
-                </TabPanel>
-            ))}
-        </Box>
+                            <ul className='w-full list-disc ml-4 space-y-2'>
+                                {experienceItems[key]['desc'].map(
+                                    (descItem, i) => (
+                                        <li key={i} className='w-full'>
+                                            {descItem}
+                                        </li>
+                                    )
+                                )}
+                            </ul>
+                        </div>
+                    </TabPanel>
+                ))}
+            </div>
+        </div>
     );
 }
