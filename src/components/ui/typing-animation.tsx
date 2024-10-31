@@ -33,6 +33,18 @@ export function TypingAnimation({
         };
     }, [duration, text, i]);
 
+    // Split the text at "|" character and render with different styles
+    const parts = displayedText.split('|');
+    const formattedText = parts.map((part, index) =>
+        index === 1 ? (
+            <span key={index} className='text-accent'>
+                {part}
+            </span>
+        ) : (
+            <span key={index}>{part}</span>
+        )
+    );
+
     return (
         <div className='flex flex-row items-center'>
             <h1
@@ -41,7 +53,7 @@ export function TypingAnimation({
                     className
                 )}
             >
-                {displayedText ? displayedText : text}
+                {formattedText}
                 <span className='typing-cursor'>|</span>
             </h1>
         </div>

@@ -2,95 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --background-color: #253237;
-    --primary-color: #9db4c0;
-    --accent-color: #e0fbfc;
-    --accent-color-2: #ff7a91;
-    --disabled-color: #5c6b73;
-
-    font-family: 'Roboto Mono', system-ui, sans-serif;
-    font-size: 16px;
-
-    color-scheme: light dark;
-    color: var(--primary-color);
-    background-color: var(--background-color);
-
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-/* a {
-    font-weight: 500;
-    color: #646cff;
-    text-decoration: inherit;
-}
-a:hover {
-    color: #535bf2;
-}
-
-body {
-    margin: 0;
-    display: flex;
-    place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
-}
-
-h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
-}
-
-button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #1a1a1a;
-    cursor: pointer;
-    transition: border-color 0.25s;
-}
-button:hover {
-    border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
-    }
-    a:hover {
-        color: #747bff;
-    }
-    button {
-        background-color: #f9f9f9;
-    }
-} */
-
 @layer base {
+    h1 {
+        @apply text-4xl font-bold leading-[5rem] tracking-[-0.02em];
+    }
+
+    p {
+        @apply leading-relaxed my-4;
+    }
     :root {
-        --background: 0 0% 100%;
-        --foreground: 0 0% 3.9%;
+        --background: 200 19% 18%;
+        --foreground: 200 19% 68%;
         --card: 0 0% 100%;
         --card-foreground: 0 0% 3.9%;
         --popover: 0 0% 100%;
         --popover-foreground: 0 0% 3.9%;
-        --primary: 0 0% 9%;
+        --primary: 200 19% 68%;
         --primary-foreground: 0 0% 98%;
-        --secondary: 0 0% 96.1%;
+        --secondary: 350, 100%, 74%;
         --secondary-foreground: 0 0% 9%;
         --muted: 0 0% 96.1%;
         --muted-foreground: 0 0% 45.1%;
-        --accent: 0 0% 96.1%;
+        --accent: 182 93% 93%;
         --accent-foreground: 0 0% 9%;
         --destructive: 0 84.2% 60.2%;
         --destructive-foreground: 0 0% 98%;
@@ -103,6 +36,24 @@ button:focus-visible {
         --chart-4: 43 74% 66%;
         --chart-5: 27 87% 67%;
         --radius: 0.5rem;
+
+        --background-color: #253237;
+        --primary-color: #9db4c0;
+        --accent-color: #e0fbfc;
+        --accent-color-2: #ff7a91;
+        --disabled-color: #5c6b73;
+
+        font-family: 'Roboto Mono', system-ui, sans-serif;
+        font-size: 16px;
+
+        color-scheme: light dark;
+        color: var(--primary-color);
+        background-color: var(--background-color);
+
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
     .dark {
         --background: 0 0% 3.9%;
