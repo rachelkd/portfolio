@@ -27,7 +27,7 @@ const AboutMe: FC = () => {
                 </p>
                 <div>
                     <ul className='grid grid-cols-1 md:grid-cols-3 justify-between w-full'>
-                        <ul className='list-none space-y-2'>
+                        <ul className='list-none space-y-4'>
                             <li className='flex items-center gap-4 before:content-["☆"]'>
                                 Java
                             </li>
@@ -38,7 +38,7 @@ const AboutMe: FC = () => {
                                 C
                             </li>
                         </ul>
-                        <ul className='list-none space-y-2'>
+                        <ul className='list-none space-y-4'>
                             <li className='flex items-center gap-4 before:content-["☆"]'>
                                 Next.js
                             </li>
@@ -49,7 +49,7 @@ const AboutMe: FC = () => {
                                 Spring Boot
                             </li>
                         </ul>
-                        <ul className='list-none space-y-2'>
+                        <ul className='list-none space-y-4'>
                             <li className='flex items-center gap-4 before:content-["☆"]'>
                                 JavaScript ES6+
                             </li>
