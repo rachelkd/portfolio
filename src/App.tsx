@@ -14,7 +14,7 @@ import Projects from './components/pages/Projects';
 function App() {
     return (
         <>
-            <div className='w-full p-8 md:p-24'>
+            <div className='w-full p-8 md:p-40'>
                 <Intro />
                 <AboutMe />
                 <Experience />
