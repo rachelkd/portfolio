@@ -8,15 +8,16 @@ interface ProjectItems {
 
 const projectItems: { [key: string]: ProjectItems } = {
     Pawmodoro: {
-        githubLink: 'https://github.com/rachelkd/pawmodoro',
-        desc: 'A cat-themed focus application with Spotify integration, customizable timers and user statistics tracking.',
+        githubLink: 'https://github.com/rachelkd/pawmodoro-web',
+        desc: 'A cat-themed focus web application with Spotify integration, customizable timers and user statistics tracking. Implemented RESTful APIs using Spring Boot, following Clean Architecture principles and SOLID design patterns.',
         technologiesUsed: [
             'Java',
-            'Java Swing',
-            'JUnit',
-            'Next.js',
             'Spring Boot',
+            'JUnit',
+            'Mockito',
+            'Next.js',
             'SQL',
+            'Java Swing',
         ],
     },
     Spotiscover: {
