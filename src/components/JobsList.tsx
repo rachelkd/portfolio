@@ -10,14 +10,23 @@ interface ExperienceItem {
 }
 
 const experienceItems: { [key: string]: ExperienceItem } = {
+    'Fable Social': {
+        jobTitle: 'Software Engineer @',
+        duration: 'Nov. 2024 - Present',
+        desc: [
+            'Designed and implemented 8+ RESTful API backend using Firebase Cloud Functions and Flask for authentication and CRUD operations',
+            'Led development of view tracking features to provide engagement metrics for 50+ club users',
+            'Integrated contextual toast notifications across 20 frontend components, improving user experience for 1,000 users',
+            'Developed docker containers to reduce onboarding time by 70% for 8 engineers on the team',
+        ],
+    },
     'University of Toronto Engineering Student Consulting Association': {
         jobTitle: 'UI/UX Designer and Front-End Dev @',
         duration: 'Aug. 2024 - Present',
         desc: [
-            'Design 6 responsive web designs in Figma, improving cross-device compatibility and user experience',
-            "Build and style 2 web pages and a component library with Next.js, React, TypeScript, and Shadcn, appealing to potential clients for the organization's consulting engineering projects",
-            "Collaborate with web and executive teams to ensure clarity and intuition in the design while adhering to project deadlines and the team's vision",
-            'Plan a CRUD-based approach for managing form submissions on the website, connecting with new clients and members',
+            'Designed 6 responsive web designs in Figma, improving cross-device compatibility and user experience',
+            'Built and styled 2 web pages and a component library of 10+ components with Next.js, React, TypeScript, and Shadcn, appealing to 5+ clients for consulting engineering projects',
+            'Led monthly design reviews with web and executive teams, result in 50% fewer design revisions',
         ],
     },
     'UBC Geering Up Engineering Outreach': {
@@ -25,8 +34,8 @@ const experienceItems: { [key: string]: ExperienceItem } = {
         duration: 'Jun. 2024 - Aug. 2024',
         desc: [
             'Programmed interactive coding curriculum in Python aimed at elementary and middle school students to facilitate STEM outreach in British Columbia',
-            'Instructed over 30 dynamic STEM lessons with an emphasis on coding and physics, instilling confidence in STEM for underrepresented groups',
-            'Fostered effective collaboration and communication among co-instructors and campers to teach over 300 students per week',
+            'Instructed 30+ dynamic STEM lessons with an emphasis on coding and physics, instilling confidence in STEM for underrepresented groups',
+            'Trained and collaborated with 30+ co-instructors and campers to teach over 300 students per week',
         ],
     },
     'Crofton House School': {
